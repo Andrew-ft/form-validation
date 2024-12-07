@@ -11,15 +11,16 @@
     <h1 class="hi">Form Validation</h1>
     <div class="container">
         <div class="email">
-            <label for="email">Email address or username</label>
-            <input type="text" id="email">
+            <label for="email">username</label>
+            <input type="text" id="email" class="emailinput">
             <span class = "warning" id="emailWarning">Email field is required!</span>
         </div>
 
         <div class="password">
             <label for="password">Password</label>
-            <input type="text" class="passwordinput" id="password">
+            <input type="password" class="passwordinput" id="password">
             <span class = "warning" id="passwordWarning">Password field is required!</span>
+            <span class = "warning" id="passwordWarning2">Password must have 6 characters!</span>
             <div class="check-me">
                 <input type="checkbox">
                 <span>Remember me</span>
@@ -27,11 +28,10 @@
         </div>
 
         <div class="bottom">
-            <input type="button" value="Sign In" onclick="signIn()">
-            <a href="#" class="forgot">Forgot password?</a>
+            <input type="button" value="Sign In" id="SignIn">
         </div>
 
-        <div class="display"></div>
+        <div class="display" id="display"></div>
     </div>
 
     <script src="./ValidJS.js"></script>

@@ -29,7 +29,8 @@ h1 {
 }
 
 .warning {
-    display: none !important;
+    font-size: small;
+    color: crimson;
 }
 
 .email, .password, .bottom{
@@ -38,7 +39,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-input[type=button], input[type=text] {
+input[type=button], input[type=text], input[type=password]{
     width: 100%;
     padding: 15px 0px;
     border-radius: 5px;
@@ -51,7 +52,7 @@ label {
     font-weight: 600;
 }
 
-.passwordinput {
+.passwordinput, .emailinput {
     margin-bottom: 10px;
 }
 
@@ -67,6 +68,11 @@ input[type=button] {
     cursor: pointer;
 }
 
-.forgot {
-    font-size: 12px;
+.check-me {
+    margin-top: 5px;
+}
+
+.display {
+    text-align: center;
+    font-size: larger;
 }
